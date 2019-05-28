@@ -1,0 +1,145 @@
+.notificationMenu{
+	overflow-y: scroll;
+    position: fixed;
+    height: calc(100% - 82px);
+    z-index: 1;
+    width: 400px;
+    max-width: 100%;
+    top: 50px;
+    right: 0px;
+    background-color: #1A2226;
+}
+
+.notificationMenu::-webkit-scrollbar {
+    width: 0px;
+}
+
+.news-section-title
+{
+	color: #B2B2B2;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.news-section-icons-holder
+{
+	justify-content: space-evenly;
+    display: flex;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.profile-menu-icon-holder
+{
+    height: 34px;
+    width: 34px;
+	line-height: 32px;
+	cursor: pointer;
+    cursor: hand;
+	text-align: center;
+	margin-top: 3px;
+    margin-bottom: 3px;
+}
+.profile-menu-icon-holder svg
+{
+    fill: #626262;
+}
+
+.profile-menu-icon
+{
+	height: 22px;
+	margin: 6px;
+}
+
+/* UserHornIconDialog */
+
+.UserHornIconDialog .ui-state-default
+{
+	font-weight: normal;
+	color: #B2B2B2;
+	border: none;
+	border-top: 1px solid #686868;
+	border-radius: 0px;
+	background: #1A2226;
+}
+.UserHornIconDialog .ui-state-default:nth-of-type(1)
+{
+	border-top: 0px solid #686868 !important;
+}
+
+.UserHornIconDialog .ui-state-active
+{
+	background: #1A2226;
+}
+.UserHornIconDialog .ui-state-active:nth-of-type(1)
+{
+	border-top: 0px;
+}
+
+.UserHornIconDialog .ui-state-hover
+{
+	background: #1A2226;
+}
+.UserHornIconDialog .ui-state-focus
+{
+	border-top: 1px solid #686868 !important;
+	outline-color: transparent;
+	border: 0px solid RED;
+	background: #1A2226;
+}
+
+.UserHornIconDialog .ui-icon-triangle-1-e
+{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+}
+
+.UserHornIconDialog .ui-icon-triangle-1-s
+{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+}
+
+.UserHornIconDialog .ui-accordion .ui-accordion-content
+{
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: none;
+    border-top: 0px;
+}
+
+
+
+.UserHornIconDialog .ui-accordion-header
+{
+	overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: 'OpenSansRegular';
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 12px;
+    padding-bottom: 12px
+}
+
+.UserHornIconDialog .ui-helper-reset
+{
+	font-size: 12px;
+	font-family: 'OpenSansRegular';
+}
+.UserHornIconDialog .ui-widget-content
+{
+	color: #B2B2B2;
+	background: none;
+}
+
+.UserHornIconDialogAccordion .resetBtn
+{
+	width: calc((100% - 4px) / 2);
+    height: 30px;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    border: solid #CCCCCC 1px;
+}

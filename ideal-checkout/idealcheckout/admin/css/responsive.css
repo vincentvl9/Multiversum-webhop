@@ -1,0 +1,440 @@
+
+header .header-logo-mobile
+{
+		display: none;
+}
+
+
+/* content alignment */
+@media only screen and (max-width: 1200px)
+{	
+	.content-header{
+		height: auto;
+	}
+	.info-header{
+		display: none;
+		height: 460px;
+		font-size: 14px;
+	}
+	.header-psp-logo{
+		clear: both;
+		margin-left: calc(50% - 40px);
+	}
+	.header-producten{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		padding-left: 0px;
+		
+	}
+	.header-config-dashboard{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		padding-left: 0px;
+		
+	}
+	.header-support{
+		clear: both;
+		width: 100%;
+		text-align: center;
+		padding-left: 0px;
+		
+	}
+	.header-support:last-of-type{
+		margin-bottom: 10px;
+	}
+	
+	.content-row-upper
+	{
+		height: 100%
+	}
+	.content-row-upper .content-col{
+		margin-top: 0px;
+		width: calc(100% / 2);
+		margin-right: 0px;
+		border-right: 1px solid #DDDDDD;
+		border-bottom: 1px solid #DDDDDD;
+		
+	}
+	.content-row-upper .content-col:nth-of-type(2){
+		border-right: 0px;
+	}
+	.content-row-upper .content-col:nth-last-of-type(-n+2){
+		border-bottom: 0px;
+	}
+	
+
+
+	.content-row-lower .content-col{
+		width: 100%;
+	}
+}
+
+/* 
+	For Mobile 
+*/
+@media only screen and (max-width: 1024px)
+{
+	
+	.infoDialog, .notificationMenu, .profileMenu, .settingsDialog{
+		width: 100%
+	}
+	
+	.body .sidebar
+	{
+		z-index: 1;
+		position: fixed;
+		height: auto;
+		display: none;
+		width: 100%;
+	}
+	
+	.sidebar-header-container
+	{
+		/*
+		display: flex;
+		flex-basis: calc(33.33% - 0.2px);
+		*/
+		width: calc(100% / 6);
+		
+	}
+	.sidebar-header-container.active
+	{
+		/*
+		display: flex;
+		flex-basis: calc(33.33% - 0.2px);
+		*/
+		width: 100%;
+		margin-right: 22px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	
+	.sidebar-header-container.active li
+	{
+		display: flex;
+		/*
+		max-width: calc(100% / 3);
+		*/
+	}
+	
+	.sidebar-header-container.closed li
+	{
+		display: none;
+	}
+	
+	.sidebar .sidebar-menu{
+		min-height: 42px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.sidebar a
+	{
+		padding: 0px;
+		display: flex;
+	}
+	
+	.sidebar a:hover 
+	{
+		background-color: transparent;
+	}
+	.treeview.active:hover
+	{
+		background-color: transparent;
+	}
+	
+	.sidebar-header.wideMenuText span
+	{
+		/*
+		display: none;
+		*/
+		align-self: flex-end;
+		color: #B2B2B2;
+	}
+	
+	.sidebar .circle-icon
+	{
+		/*
+		margin-top: 6px;
+		width: 24px;
+		height: 24px;
+		*/
+	}
+	
+	.sidebar .thinMenuIcon {
+		padding-left: 4px;
+		height: 22px;
+		width: 22px;
+		display: block;
+		/*
+		padding-top: 12px;
+		padding-left: 14px;
+		padding-right: 14px;
+		*/
+	}
+	
+	.sidebar-header-container.active .treeview
+	{
+		height: 22px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	
+	.sidebar-header .treeviewArrowIcon 
+	{
+		/*
+		display: none;
+		*/
+		margin-left: auto;
+		padding-top: 3px;
+		padding-bottom: 0px;
+	}
+	
+	.sidebar .treeviewGoBackDiv
+	{
+		width: 38px;
+		height: 38px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+	.sidebar .treeviewGoBackIcon
+	{
+		display: block;
+		padding: 8px;
+		height: 19px;
+		fill: #B2B2B2;
+		pointer-events: none;
+	}
+	
+	
+	.sidebar .treeview.active ul li div
+	{
+		width: max-content;
+	}
+	
+	.sidebar .treeview.active .treeview-menu
+	{
+		position: absolute;
+		top: 38px;
+		left: 0px;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		border-top: 1px solid #2B363B;
+	}
+	
+	.sidebar .treeviewMenuGoBackIcon
+	{
+		position: absolute;
+		top: 10px;
+		right: 40px;
+		display: block;
+		height: 20px;
+	}
+	
+	.sidebar .sidebar-header-container.active .treeviewGoBackIcon
+	{
+		position: absolute;
+		right: 0px;
+		top: 2px;
+	}
+	.sidebar .sidebar-header-container.closed .treeviewGoBackIcon
+	{
+		display: none;
+	}
+	.sidebar .treeview.closed .treeviewMenuGoBackIcon
+	{
+		display: none;
+	}
+	
+	.sidebar .treeview .treeviewArrowIcon 
+	{
+		display: none;
+	}
+	
+	.sidebar .wideMenuText {
+		/*
+		display: none;
+		*/
+		font-size: 12px;
+		white-space: nowrap;
+	}
+	.sidebar .treeview.active a .wideMenuText 
+	{
+		color: #8AA4AF;
+	}
+	.sidebar .treeview.closed a .wideMenuText 
+	{
+		color: #536269;
+	}
+	.sidebar .treeview.closed a .thinMenuIcon 
+	{
+		/*
+		filter: brightness(0.6);
+		*/
+	}
+	.sidebar .treeview span {
+    /* color: #FFFFFF; */
+    position: relative;
+    bottom: 3px;
+}
+	
+	.sidebar-header-container.active .treeview a svg {
+		fill: #536269;
+	}
+	.sidebar-header-container.active .treeview.closed a svg {
+		fill: #536269;
+	}
+	.sidebar-header-container.active .treeview.active a svg {
+		fill: #8AA4AF;
+	}
+	
+	
+	.sidebar-menu .sidebar-header-container.closed .sidebar-header .thinMenuIcon 
+	{
+		fill: #B2B2B2 !important;
+	}
+	
+	.sidebar .sidebar-header {
+		padding-left: 0px !important;
+		padding-top: 8px !important;
+		padding-bottom: 8px;
+		display: flex;
+		background-color: transparent;
+	}
+	
+	.body .sidebar ul li{
+		float: left;
+		
+	}
+	.body .sidebar ul ul li ul li{
+		float: left;
+		font-size: 12px;
+	}
+	.body .sidebar ul ul li ul li a{
+		padding-right: 0px;
+		font-size: 12px;
+		white-space: nowrap;
+	}
+	
+	.treeview.active{
+		/*
+		width: 100%;
+		*/
+	}
+	
+	header .header-logo
+	{
+		height: 48px;
+		width: 48px;
+	}
+
+	.body .content
+	{
+		width: calc(100% - 20px);
+	}
+	
+	#overlay .text
+	{
+		left: 50%;
+	}
+	
+	.content-row-upper
+	{
+		height: 100%;
+	}
+	.content-row-upper .content-col{
+		margin-top: 0px;
+		width: 100%;
+		min-height: 70px;
+		margin-right: 0px;
+		border-right: 0px;
+		border-bottom: 1px solid #DDDDDD;
+		
+	}
+	.content-row-upper .content-col:nth-of-type(3){
+		border-bottom: 1px solid #DDDDDD;
+	}
+	
+	
+	
+	.disablePspInfoButton
+	{
+		width: 108px;
+	}
+	.disableTopWidgetButton
+	{
+		width: 92px;
+	}
+	.disablePspInfoButton span
+	{
+		left: 32px;
+		bottom: 24px !important;
+	}
+	.disableTopWidgetButton span
+	{
+		left: 32px;
+		bottom: 24px !important;
+	}
+}
+
+/* 
+	For small Mobile 
+*/
+@media only screen and (max-width: 730px)
+{
+	.sidebar-header-container
+	{
+		/*
+		display: flex;
+		flex-basis: calc(33.33% - 0.2px);
+		*/
+		width: calc(100% / 3);
+		
+	}
+	.sidebar-header-container.active
+	{
+		/*
+		display: flex;
+		flex-basis: calc(33.33% - 0.2px);
+		*/
+		width: 100%;
+		margin-right: 22px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	
+	
+	#overlay .text
+	{
+		left: 50%;
+	}
+	
+	
+}
+
+/* 
+	For small Mobile 
+*/
+@media only screen and (max-width: 400px)
+{
+	.sidebar .wideMenuText {
+		/*
+		display: none;
+		*/
+		font-size: 11px;
+		white-space: nowrap;
+	}
+	
+	
+	#overlay .text
+	{
+		left: 50%;
+	}
+	
+}

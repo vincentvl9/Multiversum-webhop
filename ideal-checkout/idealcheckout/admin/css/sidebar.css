@@ -1,0 +1,434 @@
+
+.sidebar-header{
+	padding-bottom: 10px;
+    background-color: #1A2226;
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    font-size: 12px;
+	clear: both !important;
+	clear: none;
+	cursor: pointer;
+}
+
+.sidebar
+{
+	position: fixed;
+    height: calc(100% - 82px);
+	/*color: #b8c7ce;*/
+	color: #616C6F;
+	float: left;
+	clear: none;
+	background-color: #1A2226;
+	display: block;
+	width: 200px;
+}
+
+.thinMenuIcon
+{
+	width: 22px;
+	height: 22px;
+	vertical-align: sub;
+	margin-right: 5px;
+	margin-left: 2px;
+	/*
+	display: none;
+	*/
+}
+
+.sidebar-header-container .sidebar-header .thinMenuIcon {
+	fill: #FFFFFF;
+}
+.sidebar-header-container.active .sidebar-header .thinMenuIcon {
+	fill: #FFFFFF;
+}
+.sidebar-header-container {
+    color: #B2B2B2;
+}
+
+.sidebar ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.sidebar ul + ul
+{
+	margin: 10px;
+	padding: 0px;
+	list-style: none;
+}
+
+
+.sidebar li
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar-thin li
+{
+	display: block;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 48px;
+	top: -43px;
+    background-color: #1E282C;
+    width: 200px;
+}
+.sidebar-thin li ul li
+{
+	
+	/* wide */
+	display: block;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 0px;
+	top: 0px;
+    background-color: #1E282C;
+    width: 200px;
+	z-index: 1;
+	
+	
+	/* thinned in */
+	/*
+	display: block;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 4px;
+    top: 0px;
+    background-color: BLUE;
+    width: 190px;
+    z-index: 1;
+	*/
+}
+
+.body .sidebar ul ul li ul li a{
+	font-size: 12px;
+    text-transform: capitalize;
+}
+
+/*
+.sidebar a span,
+.sidebar a img
+{
+	float: left;
+	clear: none;	
+	
+}
+*/
+
+.sidebar .circle-icon{
+    vertical-align: bottom;
+    height: 12px;
+    width: 12px;
+    margin: 12px;
+    margin-right: 4px;
+}
+
+.sidebar .treeviewGoBackIcon
+{
+	display: none;
+}
+.sidebar .treeviewMenuGoBackIcon
+{
+	display: none;
+}
+
+.sidebar a
+{
+	color: #b8c7ce;
+	display: block;
+	font-size: 12px;
+	text-transform: capitalize;
+	margin: 0px;
+	padding: 0px 0px 0px 12px;
+	height: 36px;
+	line-height: 36px;
+	text-decoration: none !important;
+}
+
+.sidebar .labelsButton
+{
+	padding-left: 0px;
+}
+
+
+.sidebar .treeview span
+{
+	text-transform: uppercase;
+}
+.sidebar .treeview.active span
+{
+	/*
+	color: #FFFFFF;
+	*/
+}
+
+.sidebar .treeview .treeviewArrowIcon
+{
+	animation: treeviewArrowIconLeft 0.2s forwards;
+	height: 14px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-right: 10px;
+	float: right;
+	clear: none;
+}
+
+.sidebar .treeview.active .treeviewArrowIcon
+{
+	animation: treeviewArrowIconDown 0.2s forwards;
+}
+
+
+
+.sidebar-header-container.closed .treeview
+{
+	display: none;
+}
+
+
+
+.sidebar a:hover
+{
+	background-color: #444444;
+	color: #FFFFFF;
+}
+
+.sidebar .thin-menu-icon
+{
+	margin-top: 4px;
+    animation: thinMenuIconLeft 0.8s forwards;
+	height: 20px;
+	padding-right: 10px;
+	cursor: pointer;
+    cursor: hand;
+}
+
+@keyframes treeviewArrowIconDown {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-90deg);}
+}
+
+@keyframes treeviewArrowIconLeft {
+    from {transform: rotate(-90deg);}
+    to {transform: rotate(0deg);}
+}
+
+@keyframes thinMenuIconLeft {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+
+@keyframes thinMenuIconRight {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(0deg);}
+}
+
+/* experiment */
+
+.sidebar-header-container
+{
+	border-bottom: 1px solid #2B363B;
+}
+.sidebar-header-container.active
+{
+	color: #B2B2B2;
+}
+.sidebar-thin .sidebar-header-container
+{
+	height: 44px;
+}
+@-moz-document url-prefix() { .sidebar-thin .sidebar-header-container
+	{
+		height: 45px;
+	}
+}
+
+.sidebar-menu.active .sidebar-header-container.closed .sidebar-header .thinMenuIcon 
+{
+	/*
+    filter: brightness(0.6);
+	*/
+	fill: #536269;
+}
+.sidebar-menu.active .sidebar-header-container.closed
+{
+    color: #536269;
+}
+
+.sidebar-header-container.active .treeview.closed a svg {
+    fill: #8AA4AF;
+}
+.sidebar-header-container.active .treeview.active a svg {
+    fill: #8AA4AF;
+}
+
+.sidebar-header-container.active .treeview a
+{
+	color: #8AA4AF;
+}
+
+.sidebar-thin .sidebar-header-container.active .sidebar-header
+{
+	background-color: #1E282C;
+}
+
+
+.treeview-menu
+{
+	background-color: #1A2226;
+}
+
+
+.treeview.active
+{
+	/*
+	background-color: #1E282C;
+	*/
+}
+.treeview.active:hover
+{
+	background-color: #444444;
+}
+
+/*
+.treeview.active .treeview-menu{
+	display: block;
+	
+}
+*/
+
+.treeview .treeview-menu{
+	display: none;
+}
+
+/* end experiment */
+
+
+.sidebar-thin
+{
+	width: 48px;
+	z-index: 1;
+}
+
+.sidebar-thin .thinMenuIcon
+{
+	/*
+	width: 20px;
+	height: 20px;
+	display: block;
+	padding: 14px;
+	*/
+}
+.sidebar-thin .wideMenuText
+{
+	
+	/*
+	display: none;
+	*/
+}
+
+.sidebar-thin .treeviewArrowIcon
+{
+	display: none;
+}
+.sidebar-thin .treeview .treeviewArrowIcon
+{
+	display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+
+.sidebar-header .treeviewArrowIcon
+{
+	height: 14px;
+	padding-top: 4px;
+    padding-bottom: 11px;
+    padding-right: 10px;
+    clear: none;
+    float: right;
+    vertical-align: text-top;
+    height: 15px;
+}
+
+.sidebar-header-container .sidebar-header .treeviewArrowIcon
+{
+	animation: treeviewArrowIconLeft 0.2s forwards;
+}
+
+.sidebar-header-container.active .sidebar-header .treeviewArrowIcon {
+	vertical-align: -webkit-baseline-middle;
+    animation: treeviewArrowIconDown 0.2s forwards;
+}
+
+.sidebar-thin a
+{
+	line-height: 48px;
+	height: 43px;
+	/*
+	padding: 0px;
+	*/
+}
+.sidebar-thin ul ul div li ul li div a
+{
+	border-bottom: 0px;
+}
+
+/*
+.sidebar-thin .treeview-menu
+{
+	position: absolute;
+	margin-top: -48px;
+	left: 48px;
+    width: 200px;
+}
+*/
+
+.sidebar-thin .treeview
+{
+	border-bottom: 1px solid #3f4a4f;
+}
+.sidebar-thin .treeview.active
+{
+	/*
+	height: 48px;
+	*/
+}
+
+.sidebar-thin .sidebar-header-container.closed .treeview.active
+{
+	display: block !important;
+}
+.sidebar-thin .sidebar-header-container.closed .treeview.closed
+{
+	/*
+	display: block !important;
+	*/
+}
+
+.sidebar-thin .thin-menu-icon
+{
+
+    animation: thinMenuIconRight 0.8s ;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.sidebar-thin .circle-icon
+{
+	height: 12px;
+    width: 12px;
+    vertical-align: middle;
+}
+
+.sidebar-thin ul ul div div span
+{
+	font-size: 0px;
+}

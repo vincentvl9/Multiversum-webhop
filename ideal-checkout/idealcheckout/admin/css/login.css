@@ -1,0 +1,230 @@
+div
+{
+	box-sizing: border-box;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+html 
+{ 
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 	
+	font-family: 'OpenSansRegular';
+    color: #686868;
+	font-size: 16px;
+	background-position-y: center;
+    background-position-x: center;
+}
+
+
+.content
+{
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+	
+}
+
+.logIn-header-logo {
+	margin: auto;
+	margin-top: 180px;
+	margin-bottom: 40px;
+	width: 512px;
+}
+
+.reset-text
+{
+	text-align: center;
+	color: #FFFFFF;
+	padding-bottom: 14px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-password-link{
+	padding-top: 14px;
+}
+.forgot-password-link a{
+	color: #FFFFFF;
+    text-decoration: none;
+	font-size: 14px;
+}
+
+.login-form-div
+{
+	text-align: center;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #D8D8D8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #D8D8D8;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #D8D8D8;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #D8D8D8;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #D8D8D8;
+}
+
+input#username
+{
+    width: 250px;
+    border: 2px solid #D8D8D8;
+    border-bottom: 1px;
+    border-radius: 5px 5px 0px 0px;
+	padding-left: 10px;
+	font-size: 16px;
+	line-height: 38px;
+}
+
+.password-wrapper
+{
+	margin-left: calc(50% - 132px);
+    position: relative;
+    width: 264px;
+}
+
+input#password
+{
+    width: 250px;
+    border: 2px solid #D8D8D8;
+	border-radius: 0px 0px 5px 5px;
+	padding-left: 10px;
+	font-size: 16px;
+	line-height: 38px;
+}
+
+.login-icon
+{
+	position: absolute;
+    top: 2px;
+    right: 2px;
+    height: 40px;
+    width: 40px;
+	border: none;
+    background-color: transparent;
+    opacity: .3;
+	background-image: url('../images/confirm-icon.png');
+	background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login-icon:hover
+{
+	opacity: 1;
+}
+
+.login-bottom-text
+{
+	text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 200px);
+    width: 400px;
+	color: #FFFFFF;
+	
+	/*text-shadow: -2px 0 rgba(0, 0, 0, 0.3), 0 2px rgba(0, 0, 0, 0.3), 2px 0 rgba(0, 0, 0, 0.3), 0 -2px rgba(0, 0, 0, 0.3);*/
+	
+}
+
+.errorInfo
+{
+	background-color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    padding: 4px;
+    opacity: 0.8;
+    border-radius: 4px;
+    font-size: 16px;
+	margin-top: 110px !important;
+}
+
+.login-bottom-text .login-bottom-link
+{
+	color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+}
+.login-bottom-text .login-bottom-disclaimer
+{
+	color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#disclaimer-text
+{
+	text-align: center;
+	padding: 10px;
+	margin: 50px;
+	background-color: RGBA(255, 255, 255, 0.6);
+	border-radius: 14px;
+}
+
+/* 
+	For Mobile 
+	Iphone X CSS screen Height = 812px 
+*/
+
+@media only screen and (max-width: 1024px)
+{
+
+	
+	.login-bottom-text
+	{
+		text-align: center;
+		margin: auto;
+		position: absolute;
+		bottom: 40px;
+		color: #FFFFFF;
+		
+	}
+	.login-bottom-text .login-bottom-link
+	{
+		font-size: 14px;
+	}
+	.login-bottom-text .login-bottom-disclaimer
+	{
+		font-size: 12px;
+	}
+	.logIn-header-logo {
+		margin: auto;
+		margin-top: 80px;
+		margin-bottom: 40px;
+		width: 90%;
+	}
+	
+}
+
+@media only screen and (max-height: 362px)
+{
+
+	.logIn-header-logo {
+		margin-top: 20px;
+	}
+	.login-bottom-text
+	{
+		bottom: 20px;
+		
+	}
+	
+}

@@ -1,0 +1,162 @@
+.profileMenu{
+	overflow-y: scroll;
+    position: fixed;
+    height: calc(100% - 82px);
+    z-index: 1;
+    width: 400px;
+    max-width: 100%;
+    top: 50px;
+    right: 0px;
+    background-color: #1A2226;
+}
+
+.profileMenu::-webkit-scrollbar {
+    width: 0px;
+}
+
+.info-section-icons-holder
+{
+	justify-content: space-evenly;
+    display: flex;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.profile-menu-icon-holder
+{
+    height: 34px;
+    width: 34px;
+	line-height: 32px;
+	cursor: pointer;
+    cursor: hand;
+	text-align: center;
+	margin-top: 3px;
+    margin-bottom: 3px;
+	
+}
+.profile-menu-icon-holder svg
+{
+    fill: #626262;
+}
+
+.profile-menu-icon
+{
+	float: left;
+	clear: none;
+	height: 22px;
+	margin: 6px;
+}
+
+/* UserGearIconDialog */
+
+.UserGearIconDialog .ui-state-default
+{
+	font-weight: normal;
+	color: #B2B2B2;
+	border: none;
+	border-top: 1px solid #686868;
+	border-radius: 0px;
+	background: #1A2226;
+}
+.UserGearIconDialog .ui-state-default:nth-of-type(1)
+{
+	border-top: 0px solid #1A2226 !important;
+}
+
+.UserGearIconDialog .ui-state-active
+{
+	background: #1A2226;
+}
+.UserGearIconDialog .ui-state-active:nth-of-type(1)
+{
+	border-top: 0px;
+}
+
+.UserGearIconDialog .ui-state-hover
+{
+	background: #1A2226;
+}
+.UserGearIconDialog .ui-state-focus
+{
+	border-top: 1px solid #686868 !important;
+	outline-color: transparent;
+	border: 0px solid RED;
+	background: #1A2226;
+}
+
+.UserGearIconDialog .ui-icon-triangle-1-e
+{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+}
+
+.UserGearIconDialog .ui-icon-triangle-1-s
+{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+}
+
+.UserGearIconDialog .ui-accordion .ui-accordion-content
+{
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: none;
+    border-top: 0px;
+}
+
+
+
+.UserGearIconDialog .ui-accordion-header
+{
+	font-size: 12px;
+	font-family: 'OpenSansRegular';
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 12px;
+    padding-bottom: 12px
+}
+
+.UserGearIconDialog .ui-helper-reset
+{
+	font-size: 12px;
+	font-family: 'OpenSansRegular';
+}
+.UserGearIconDialog .ui-widget-content
+{
+	color: #B2B2B2;
+	background: none;
+}
+
+.UserGearIconDialogAccordion .resetBtn
+{
+	width: calc((100% - 4px) / 2);
+    height: 30px;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    border: solid #CCCCCC 1px;
+}
+
+
+/* USERPHONEICONDIALOG */
+
+.UserPhoneIconDialog
+{
+	color: #B2B2B2;
+	font-size: 12px;
+	padding: 10px;
+}
+
+/* USERMAILICONDIALOG */
+.UserMailIconDialog
+{
+	color: #B2B2B2;
+	font-size: 12px;
+	padding: 10px;
+}
+
+.UserMailIconDialog a
+{
+	text-decoration: none;
+	color: #B2B2B2;
+}

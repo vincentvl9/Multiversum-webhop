@@ -1,0 +1,188 @@
+#topWidget1{
+	background-color: RED;
+	height: 100%;
+	text-align: center;
+}
+
+#topWidget2{
+	background-color: BLUE;
+	height: 100%;
+	text-align: center;
+}
+
+#topWidget3{
+	background-color: PURPLE;
+	height: 100%;
+	text-align: center;
+}
+
+#topWidget4{
+	background-color: WHITE;
+	height: 100%;
+	text-align: center;
+}
+
+#topWidget5{
+	background-color: GREEN;
+	height: 100%;
+	text-align: center;
+}
+
+#topWidget6{
+	background-color: ORANGE;
+	height: 100%;
+	text-align: center;
+}
+
+.widgetTopDeco
+{
+	height: 4px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.widgetTopInfo
+{
+	font-size: 14px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 2px solid #DDDDDD;
+}
+
+.moveIconLowerWidget
+{
+	line-height: 100%;
+	cursor:pointer;
+    height: 16px;
+	width: 16px;
+    float: right;
+    clear: none;
+	margin-top: 12px;
+    margin-right: 10px;
+}
+
+.infoIconTopWidget
+{
+	line-height: 100%;
+	cursor:help;
+    height: 16px;
+	width: 16px;
+    float: right;
+    clear: none;
+	margin-top: 10px;
+    margin-right: 10px;
+}
+.infoIconLowerWidget
+{
+	line-height: 100%;
+	cursor:help;
+    height: 16px;
+	width: 16px;
+    float: right;
+    clear: none;
+	margin-top: 12px;
+    margin-right: 10px;
+}
+
+.minusLowerWidget
+{
+	line-height: 100%;
+	cursor:default;
+	height: 16px;
+	width: 16px;
+    float: right;
+    clear: none;
+	margin-top: 12px;
+    margin-right: 10px;
+	background-size: cover;
+    background-position: top;
+    background-image: url(../images/minus-icon.svg);
+}
+.minimized .minusLowerWidget
+{
+    background-position: bottom;
+}
+
+
+.lockWidgetsIcon
+{
+	line-height: 100%;
+	cursor:default;
+	height: 16px;
+	width: 16px;
+    float: right;
+    clear: none;
+	margin-top: 12px;
+    margin-right: 10px;
+	background-size: cover;
+    background-position: top;
+    background-image: url(../images/lock-icon.svg);
+}
+.content-row-upper .lockWidgetsIcon
+{
+	line-height: 100%;
+	cursor:help;
+    height: 16px;
+	width: 16px;
+    float: right;
+    clear: none;
+	margin-top: 10px;
+    margin-right: 10px;
+}
+.ui-sortable-handle .lockWidgetsIcon
+{
+    background-position: bottom;
+}
+
+.crossTopWidget.minusLowerWidget, .crossPspInfo.minusLowerWidget
+{
+	background-image: none;
+}
+
+.hideTopWidget.hidden
+{
+	display: none;
+}
+.minimizeLowerWidget
+{
+	color: #686868;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    background-color: #EDEDED;
+    border: solid #CCCCCC 1px;
+    float: right;
+    clear: none;
+    margin-top: 4px;
+}
+
+.removeLowerWidget
+{
+	line-height: 100%;
+    cursor: default;
+    height: 16px;
+    width: 16px;
+    float: right;
+    clear: none;
+    margin-top: 12px;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../images/cross-icon.svg);
+}
+
+.allMinimized{
+	display: none !important;
+}
+
+.noWidgetDataAvailable
+{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.content-row-lower .ui-sortable-helper
+{
+	height: 44px !important;
+}

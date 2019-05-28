@@ -1,0 +1,79 @@
+#paymentMethodConfigurator{
+	background-color: #FFFFFF;
+	border-radius: 4px 4px 0px 0px;
+	color: #686868;
+	font-size: 14px;
+}
+
+.paymentMethodConfiguratorTopDeco
+{
+	background-color: var(--banding-color);
+}
+
+#paymentMethodConfigurator .paymentMethodConfiguratorContent b
+{
+		font-weight: normal;
+}
+
+#paymentMethodConfigurator .paymentMethodConfiguratorContent a
+{
+		color: #686868;
+		font-size: 14px;
+}
+
+#paymentMethodConfigurator .paymentMethodConfiguratorContent select
+{
+	height: 32px;
+	width: calc(100% - 26px);
+	padding: 0px 12px;
+	margin-bottom: 10px;
+	border-color: #d2d6de;
+	font-size: 14px;
+	color: #686868;
+	border: 1px solid #CCCCCC;
+}
+
+#paymentMethodConfigurator .paymentMethodConfiguratorContent input.text
+{
+	height: 32px;
+	width: calc(100% - 50px);
+	padding: 0px 12px;
+	margin-bottom: 10px;
+	border-color: #d2d6de;
+	font-size: 14px;
+	color: #686868;
+	border: 1px solid #CCCCCC;
+}
+
+
+
+#paymentMethodConfigurator .paymentMethodConfiguratorButton
+{
+	cursor: pointer;
+  width: 80px !important;
+  height: 30px;
+  font-size: 12px;
+  background-color: #00C0EF;
+	color: #FFFFFF !important;
+  border: solid #00acd6 1px;
+  color: white;
+  margin: 10px 0px 10px 0px;
+}
+
+#paymentMethodConfiguratorResult
+{
+	width: calc(100% - 4px);
+	height: 360px;
+	resize: none;
+}
+
+.button-apply
+{
+	background-color: #00A65A;
+	border: solid #018a4b 1px;
+}
+
+.paymentMethodConfiguratorContent select
+{
+	width: 100%;
+}

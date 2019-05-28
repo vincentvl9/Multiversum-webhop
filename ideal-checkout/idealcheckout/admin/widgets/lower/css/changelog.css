@@ -1,0 +1,104 @@
+#changelog{
+	background-color: WHITE;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.changelogTopDeco
+{
+	background-color: var(--banding-color);
+}
+
+.changelogContent .ui-state-active
+{
+	border: 0px solid black;
+}
+
+.changelogContent .ui-state-hover
+{
+	border: 0px solid black;
+	background: #ffffff;
+}
+.changelogContent .ui-state-focus
+{
+	border: 0px solid RED;
+	background: #ffffff;
+}
+
+.changelogContent .ui-accordion-header-active
+{
+	color: BLUE;
+}
+
+.changelogContent .ui-icon-triangle-1-e
+{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+}
+
+.changelogContent .ui-icon-triangle-1-s
+{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+}
+
+.changelogContent .ui-accordion .ui-accordion-content
+{
+	padding: 10px;
+	padding-left: 32px;
+	border: none;
+	border-top: 1px solid #ddd;
+}
+
+.changelogContent .ui-accordion .ui-accordion-content:nth-of-type(3)
+{
+	border-top: 0px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.changelogContent .ui-state-default
+{
+	font-weight: normal;
+	color: #00acd6;
+	border: none;
+	border-top: 1px solid #ddd;
+	border-radius: 0px;
+}
+
+.changelogContent .ui-state-default:nth-of-type(1)
+{
+	border-top: 0px solid #ddd;
+}
+
+.changelogContent .ui-state-default:nth-of-type(2)
+{
+	border-top: 1px solid #ddd;
+}
+
+.changelogContent .ui-state-default:nth-of-type(3)
+{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.changelogContent .ui-accordion-header
+{
+	font-size: 14px;
+	font-family: 'OpenSansRegular';
+}
+
+.changelogContent .ui-helper-reset
+{
+	font-size: 14px;
+	font-family: 'OpenSansRegular';
+}
+.changelogContent .ui-widget-content
+{
+	background: none;
+}
+
+.changeLogWidgetAccordionDate
+{
+	color: #686868;
+	float: right;
+	clear: none;
+}
